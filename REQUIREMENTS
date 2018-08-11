@@ -1,0 +1,12 @@
+dicttoxml
+dnspython
+jsonrpclib
+lxml
+mechanize
+slowaes
+XlsxWriter
+olefile
+PyPDF2
+flask
+unicodecsv
+tld
