@@ -103,7 +103,7 @@ class Recon(framework.Framework):
                     'av': __version__,
                     'cd': cd
                     }
-            self.request('http://www.google-analytics.com/collect', payload=data)
+            #self.request('http://www.google-analytics.com/collect', payload=data)
         except:
             pass
 

@@ -843,7 +843,7 @@ class Framework(cmd.Cmd):
         if name in self.options:
             value = ' '.join(options[1:])
             self.options[name] = value
-            print('%s => %s' % (name.upper(), value))
+            print('{} => {}'.format(name.upper(), value))
             self._save_config(name)
         else: self.error('Invalid option.')
 

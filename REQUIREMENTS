@@ -10,3 +10,4 @@ PyPDF2
 flask
 unicodecsv
 tld
+email_validator
