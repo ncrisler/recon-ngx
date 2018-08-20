@@ -14,6 +14,28 @@ from recon.core.framework import Framework
 def output(string):
     print('{}[*]{} {}'.format(Colors.B, Colors.N, string))
 
+def init_keys(config_file):
+    try:
+        key_conf = open(config_file)
+    except IOError as e:
+        output('Reading configure file error: {}'.format(str(e)))
+        exit(-1)
+    x = base.Recon(mode=base.Mode.CLI)
+    # init workspace
+    x.init_workspace('default')
+    for line in key_conf.readlines():
+        line = line.strip()
+        if not len(line) or line.startswith('#'):
+            continue
+        key, value = line.split('=')
+        if not key:
+            output('Config filr error at line:{}'.format(line))
+            return
+        if not value:
+            continue
+        x.onecmd('keys add {} {}'.format(key, value))
+    key_conf.close()
+
 def search_module(text):
     '''Searches available modules'''
     if not text:
@@ -36,6 +58,7 @@ def set_workspace(workspace):
     x.onecmd('set NAMESERVER 114.114.114.114')
     x.onecmd(('set USER-AGENT Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 6.1; '
               'Trident/4.0; GTB7.4; InfoPath.2; SV1; .NET CLR 3.3.69573; WOW64; en-US)'))
+    output('')
     return x
 
 def autodomain(workspace,domain):
@@ -234,5 +257,6 @@ def do_args_check(args):
     autoresport(workspace)
 
 if __name__ == "__main__":
+    init_keys('keys.conf')
     args = do_args_parse()
     do_args_check(args)
