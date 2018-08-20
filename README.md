@@ -4,6 +4,11 @@ recon-ng for myself
 
 Original link: https://bitbucket.org/LaNMaSteR53/recon-ng
 
+# Installation
+
+```
+pip install -r REQUIREMENTS
+```
 
 # Usage
 
@@ -22,4 +27,27 @@ optional arguments:
   -e email-address     input email address
   -c company-name      input company name
   -u username          input username
+```
+
+# API keys config (Optional)
+```
+# optional api keys
+bing_api=
+builtwith_api=
+censysio_id=
+censysio_secret=
+flickr_api=
+fullcontact_api=
+github_api=
+google_api=
+google_cse=
+hashes_api=
+ipinfodb_api=
+pwnedlist_api=
+pwnedlist_iv=
+pwnedlist_secret=
+shodan_api=
+twitter_api=
+twitter_secret=
+
 ```
