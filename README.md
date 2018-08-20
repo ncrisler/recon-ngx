@@ -45,5 +45,18 @@ google_cse=
 hashes_api=
 ipinfodb_api=
 shodan_api=
-
 ```
+
+# key features
+ 
+  - Automatically  run recon-ng modules
+  - Automatically read API keys from config file
+  - multiple input support: domain name, CIDR format netblocks and IP address, email address, company name, user name
+  - Automatically export results in three formats: JSON, HJTML, CSV
+
+# todo
+
+ - batch input support
+ - more modules
+ - optimize the program logic
+
