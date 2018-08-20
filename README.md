@@ -56,7 +56,7 @@ shodan_api=
   - Automatically  run recon-ng modules
   - Automatically read API keys from config file
   - multiple input support: domain name, CIDR format netblocks and IP address, email address, company name, user name
-  - Automatically export results in three formats: JSON, HJTML, CSV
+  - Automatically export results in three formats: JSON, HTML, CSV
 
 # Todo
 
