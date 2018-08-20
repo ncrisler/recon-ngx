@@ -31,6 +31,7 @@ optional arguments:
 
 # API keys config (Optional)
 ```
+cat keys.conf
 # optional api keys
 bing_api=
 builtwith_api=
@@ -43,11 +44,6 @@ google_api=
 google_cse=
 hashes_api=
 ipinfodb_api=
-pwnedlist_api=
-pwnedlist_iv=
-pwnedlist_secret=
 shodan_api=
-twitter_api=
-twitter_secret=
 
 ```
