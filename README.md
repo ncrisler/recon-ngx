@@ -4,6 +4,10 @@ recon-ng for myself
 
 Original link: https://bitbucket.org/LaNMaSteR53/recon-ng
 
+# Version
+
+0.0.1
+
 # Installation
 
 ```
