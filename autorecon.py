@@ -53,7 +53,7 @@ def set_workspace(workspace):
     # init workspace
     x.init_workspace(workspace)
     output('WORKSPACE => {}'.format(workspace))
-    x.onecmd("set TIMEOUT 60")
+    x.onecmd("set TIMEOUT 30")
     x.onecmd("set THREADS 10")
     x.onecmd('set NAMESERVER 114.114.114.114')
     x.onecmd(('set USER-AGENT Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 6.1; '
